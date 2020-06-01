@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KiraVitaFarm</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body class="loader-active">
+
+
+<div style="display: none">
+    <svg version="1.1" id="close" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+         x="0px" y="0px"
+         viewBox="0 0 492 492" style="enable-background:new 0 0 492 492;" xml:space="preserve">
+<g>
+    <g>
+        <path d="M300.188,246L484.14,62.04c5.06-5.064,7.852-11.82,7.86-19.024c0-7.208-2.792-13.972-7.86-19.028L468.02,7.872
+			c-5.068-5.076-11.824-7.856-19.036-7.856c-7.2,0-13.956,2.78-19.024,7.856L246.008,191.82L62.048,7.872
+			c-5.06-5.076-11.82-7.856-19.028-7.856c-7.2,0-13.96,2.78-19.02,7.856L7.872,23.988c-10.496,10.496-10.496,27.568,0,38.052
+			L191.828,246L7.872,429.952c-5.064,5.072-7.852,11.828-7.852,19.032c0,7.204,2.788,13.96,7.852,19.028l16.124,16.116
+			c5.06,5.072,11.824,7.856,19.02,7.856c7.208,0,13.968-2.784,19.028-7.856l183.96-183.952l183.952,183.952
+			c5.068,5.072,11.824,7.856,19.024,7.856h0.008c7.204,0,13.96-2.784,19.028-7.856l16.12-16.116
+			c5.06-5.064,7.852-11.824,7.852-19.028c0-7.204-2.792-13.96-7.852-19.028L300.188,246z"/>
+    </g>
+</g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+</svg>
+
+
+    <svg id="burger" enable-background="new 0 0 512 512" viewBox="0 0 512 512"
+         xmlns="http://www.w3.org/2000/svg">
+        <path d="m464.883 64.267h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z"/>
+        <path d="m464.883 208.867h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z"/>
+        <path d="m464.883 353.467h-417.766c-25.98 0-47.117 21.137-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.012-21.137-47.149-47.117-47.149z"/>
+    </svg>
+
+
+    <svg version="1.1" id="arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+         y="0px"
+         viewBox="0 0 443.52 443.52" style="enable-background:new 0 0 443.52 443.52;" xml:space="preserve">
+<g>
+    <g>
+        <path d="M143.492,221.863L336.226,29.129c6.663-6.664,6.663-17.468,0-24.132c-6.665-6.662-17.468-6.662-24.132,0l-204.8,204.8
+			c-6.662,6.664-6.662,17.468,0,24.132l204.8,204.8c6.78,6.548,17.584,6.36,24.132-0.42c6.387-6.614,6.387-17.099,0-23.712
+			L143.492,221.863z"/>
+    </g>
+</g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+</svg>
+
+    <svg version="1.1" id="marker" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+         x="0px" y="0px"
+         viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<g>
+    <g>
+        <path d="M256,0C153.755,0,70.573,83.182,70.573,185.426c0,126.888,165.939,313.167,173.004,321.035
+			c6.636,7.391,18.222,7.378,24.846,0c7.065-7.868,173.004-194.147,173.004-321.035C441.425,83.182,358.244,0,256,0z M256,278.719
+			c-51.442,0-93.292-41.851-93.292-93.293S204.559,92.134,256,92.134s93.291,41.851,93.291,93.293S307.441,278.719,256,278.719z"/>
+    </g>
+</g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+</svg>
+
+
+    <svg viewBox="0 0 448 448" id="plus" xmlns="http://www.w3.org/2000/svg">
+        <path d="m272 184c-4.417969 0-8-3.582031-8-8v-176h-80v176c0 4.417969-3.582031 8-8 8h-176v80h176c4.417969 0 8 3.582031 8 8v176h80v-176c0-4.417969 3.582031-8 8-8h176v-80zm0 0"/>
+    </svg>
+
+
+    <svg version="1.1" id="call" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+         y="0px"
+         viewBox="0 0 384 384" style="enable-background:new 0 0 384 384;" xml:space="preserve">
+<g>
+    <g>
+        <path d="M353.188,252.052c-23.51,0-46.594-3.677-68.469-10.906c-10.719-3.656-23.896-0.302-30.438,6.417l-43.177,32.594
+			c-50.073-26.729-80.917-57.563-107.281-107.26l31.635-42.052c8.219-8.208,11.167-20.198,7.635-31.448
+			c-7.26-21.99-10.948-45.063-10.948-68.583C132.146,13.823,118.323,0,101.333,0H30.813C13.823,0,0,13.823,0,30.813
+			C0,225.563,158.438,384,353.188,384c16.99,0,30.813-13.823,30.813-30.813v-70.323C384,265.875,370.177,252.052,353.188,252.052z"
+        />
+    </g>
+</g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+</svg>
+
+
+</div>
+
+<div class="preloader">
+    <div class="preloader__wrapper">
+        <div class="preloader__img" style="background-image: url(images/content/images/file.jpg)"></div>
+        <div class="preloader__shadow"></div>
+    </div>
+</div>
+
+<div class="mobile-menu">
+    <div class="burger">
+        <span></span>
+    </div>
+
+    <div class="mobile-menu__content">
+        <div class="mobile-menu__item1" style="background-image: url('images/content/products/mobile-item.png')"></div>
+        <div class="mobile-menu__item2" style="background-image: url('images/content/products/tabletka.png')"></div>
+        <div class="mobile-menu__item3" style="background-image: url('images/content/products/butil.png')"></div>
+        <div class="mobile-menu__logo">
+            <img src="images/content/logo/logo.png">
+        </div>
+        <ul class="mobile-menu__list">
+            <li><a href="#home">Главная</a></li>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#products">Продукции</a></li>
+            <li><a href="#footer">Контакты</a></li>
+        </ul>
+        <div class="mobile-menu__lang">
+            <div class="lang">
+                <span class="lang__text">Сменить язык</span>
+                <a class="lang__item" style="background-image: url(images/content/icons/uz.jpg)" href="/?lang=uz"></a>
+                <a class="lang__item" style="background-image: url(images/content/icons/ru.jpg)" href="/?lang=ru"></a>
+                <a class="lang__item" style="background-image: url(images/content/icons/us.jpg)" href="/?lang=en"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main-wrapper">
+    <div class="call-animation">
+        <a href="tel:+998974458626">
+            <svg>
+                <use href="#call"></use>
+            </svg>
+        </a>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a class="header__link" href="/">Kira VitaFarm</a>
+                <ul class="feedback-list">
+                    <li class="feedback-list__item">
+                        <div class="feedback-list__img"
+                             style="background-image: url('images/content/icons/map.png')"></div>
+                        <div class="feedback-list__text">
+                            <a target="_blank"
+                               href="https://yandex.uz/maps/10335/tashkent/house/YkAYdA9jT0wPQFprfX95cHRgZQ==/?ll=69.283698%2C41.381831&sll=69.279737%2C41.311151&source=wizgeo&sspn=1.972046%2C0.879095&utm_medium=maps-desktop&utm_source=serp&z=17.15"
+                               class="feedback-list__link">Ташкент, Юнусабадский район, <br> 10 квартал, 15 дом, 10 кв.</a>
+                        </div>
+                    </li>
+                    <li class="feedback-list__item">
+                        <div class="feedback-list__img"
+                             style="background-image: url('images/content/icons/call.png')"></div>
+                        <div class="feedback-list__text">
+                            <a href="tel:+99897 752 86 26" class="feedback-list__link">+99897 752 86 26</a> <br>
+                            <a href="mailto:kira-vitafarm@mail.ru" class="feedback-list__link">kira-vitafarm@mail.ru</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="lang">
+                    <span class="lang__text">Сменить язык</span>
+                    <a class="lang__item" style="background-image: url(images/content/icons/uz.jpg)" href="/?lang=uz"></a>
+                    <a class="lang__item" style="background-image: url(images/content/icons/ru.jpg)" href="/?lang=ru"></a>
+                    <a class="lang__item" style="background-image: url(images/content/icons/us.jpg)" href="/?lang=en"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="home" id="home" style="background-image: url('images/content/bg/home.jpg')">
+        <div class="container">
+            <div class="home__info">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-12 col-md-3">
+                        <div class="home__logo wow zoomIn"
+                             style="background-image: url('images/content/logo/logo.png')"></div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <a href="https://www.youtube.com/channel/UCFgFROQ4vL-2zOWpH7Gq98Q" target="_blank"
+                           class="home__video wow zoomIn" data-wow-delay="0.5s">
+                            <div class="home__video-1" style="background-image: url('images/content/images/video-3.png')"></div>
+                            <div class="home__video-2" style="background-image: url('images/content/images/video-2.png')"></div>
+                            <div class="home__video-3" style="background-image: url('images/content/images/video-1.png')"></div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="form wow zoomIn" data-wow-delay="0.8s">
+                            <div class="form__title">БЕСПЛАТАЯ КОНСУЛЬТАЦИЯ СПЕЦИАЛИСТА</div>
+                            <form action="#" class="form-group" data-info="Бесплатная консультация">
+                                <div class="form-control">
+                                    <input name="name" type="text" placeholder="Имя">
+                                </div>
+                                <div class="form-control form-control__number">
+                                    <div class="form__flag"
+                                         style="background-image: url('images/content/icons/flag.png')"></div>
+                                    <div class="form__svg">
+                                        <svg>
+                                            <use href="#call"></use>
+                                        </svg>
+                                    </div>
+                                    <input name="number" type="number">
+                                </div>
+                                <div class="form-control">
+                                    <div class="button button_primary">
+                                        <button class="submit">ОТПРАВИТЬ</button>
+                                    </div>
+                                </div>
+                                <div class="messages">
+                                    <span class="messages__error">Пожалуйста заполните все поля</span>
+                                    <span class="messages__complete">Спасибо, ваша заявка принята</span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="home-feature">
+                <div class="home-feature__item">
+                    <div class="home-feature__count" id="clientsCount">0</div>
+                    <div class="home-feature__text">Более 1500 клиентов</div>
+                </div>
+                <div class="home-feature__item">
+                    <div class="home-feature__count" id="distributor">0</div>
+                    <div class="home-feature__text">Дистрьюбутора по Узбекистану</div>
+                </div>
+                <div class="home-feature__item">
+                    <div class="home-feature__count" id="production">0</div>
+                    <div class="home-feature__text">Производит единиц коробок аскорбинки в месяц</div>
+                </div>
+                <div class="home-feature__item">
+                    <div class="home-feature__count" id="frames">0</div>
+                    <div class="home-feature__text">Более квадратных метров производственных площадей</div>
+                </div>
+            </div>
+        </div>
+        <div class="home__ananas wow zoomIn" style="background-image: url('images/content/fruits/anan.png')"></div>
+    </section>
+    <section id="about" class="section section-about  wow fadeInUp">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">О нас</h2>
+            </div>
+            <div class="about">
+                <div class="about__title">KIRA VITAFARM</div>
+                <p class="about__text">Самый крупный поставщик аскорбиновой кислоты Республики Узбекистан</p>
+                <p class="about__text">ООО «Kira VitaFarm» сегодня — это динамично развивающееся предприятие включающее
+                    75
+                    сотрудников, 15 технологов, контрольно-аналитическую лабораторию, информационно-фармацевтический
+                    центр.</p>
+            </div>
+        </div>
+        <div class="about__fruit about__ananas wow zoomIn" data-wow-duration="2s"
+             style="background-image: url('images/content/fruits/ananas.png')"></div>
+        <div class="about__figure wow lightSpeedInLeft"
+             style="background-image: url('images/content/images/about_figur.png')"></div>
+    </section>
+    <section id="products" class="section section-products wow fadeInUp">
+        <div class="section__header">
+            <h2 class="section__title">Наши продукты</h2>
+        </div>
+        <div class="products">
+            <div class="container">
+                <div class="products__wrapper">
+                    <div class="products-slider__button products-slider__button_prev">
+                        <svg>
+                            <use href="#arrow"></use>
+                        </svg>
+                    </div>
+                    <div class="products-slider__button products-slider__button_next">
+                        <svg>
+                            <use href="#arrow"></use>
+                        </svg>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="swiper-container products-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide products-slide">
+                                        <div class="product"
+                                             style="background-image: url('images/content/products_bg/bg_item1.png')">
+                                            <div class="product__inner">
+                                                <div class="product__header">
+                                                    <div class="product__img"
+                                                         style="background-image: url('images/content/products/item1.png')"></div>
+                                                </div>
+                                                <div class="product__footer">
+                                                    <h4 class="product__title">Vitaminka C в тюбике</h4>
+                                                    <div class="product__description">Аскорбинка с глюкозой и кальцием
+                                                        для детей и взрослых со вкусами апельсина, яблока, малины,
+                                                        тропикано, лимона, вишни.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide products-slide">
+                                        <div class="product"
+                                             style="background-image: url('images/content/products_bg/bg_item1.png')">
+                                            <div class="product__inner">
+                                                <div class="product__header">
+                                                    <div class="product__img"
+                                                         style="background-image: url('images/content/products/konfeta.png')"></div>
+                                                </div>
+                                                <div class="product__footer">
+                                                    <h4 class="product__title">Vitaminka C в крутке 5шт</h4>
+                                                    <div class="product__description">Аскорбинка с глюкозой для детей и
+                                                        взрослых со вкусами апельсина, яблока, лимона, вишни.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide products-slide">
+                                        <div class="product"
+                                             style="background-image: url('images/content/products_bg/bg_item1.png')">
+                                            <div class="product__inner">
+                                                <div class="product__header">
+                                                    <div class="product__img"
+                                                         style="background-image: url('images/content/products/tabletka.png')"></div>
+                                                </div>
+                                                <div class="product__footer">
+                                                    <h4 class="product__title">Vitaminka С в блистере</h4>
+                                                    <div class="product__description">Аскорбинка с глюкозой для детей и
+                                                        взрослых со вкусами апельсина, яблока, лимона, вишни.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide products-slide">
+                                        <div class="product"
+                                             style="background-image: url('images/content/products_bg/bg_item1.png')">
+                                            <div class="product__inner">
+                                                <div class="product__header">
+                                                    <div class="product__img"
+                                                         style="background-image: url('images/content/products/paket.png')"></div>
+                                                </div>
+                                                <div class="product__footer">
+                                                    <h4 class="product__title">Vitaminka С в пакетике</h4>
+                                                    <div class="product__description">Аскорбинка с глюкозой для детей и
+                                                        взрослых со вкусами апельсина, яблока, лимона, вишни, малины,
+                                                        банана.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide products-slide">
+                                        <div class="product"
+                                             style="background-image: url('images/content/products_bg/bg_item1.png')">
+                                            <div class="product__inner">
+                                                <div class="product__header">
+                                                    <div class="product__img"
+                                                         style="background-image: url('images/content/products/konfeta.png')"></div>
+                                                </div>
+                                                <div class="product__footer">
+                                                    <h4 class="product__title">Vitaminka C в крутке 10шт</h4>
+                                                    <div class="product__description">Аскорбинка с глюкозой для детей и
+                                                        взрослых со вкусами апельсина, яблока, лимона, вишни, малина.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-count">
+        <div class="count__lemon wow slideInLeft"
+             style="background-image: url('images/content/fruits/lemon.png');"></div>
+        <div class="container">
+            <div class="row justify-content-lg-between justify-content-center">
+                <div class="col-12 col-lg-6">
+                    <div class="count-info">
+                        <div class="count-info__title">АКЦИЯ! ОПЛАТИТЕ 100% ЗАРАНЕЕ И ПОЛУЧИТЕ СКИДКУ 10%
+                            <div class="count__arrow"
+                                 style="background-image: url('images/content/images/arrow.png')"></div>
+                        </div>
+                        <div class="count-info__list">
+                            <div class="count wow zoomIn"
+                                 style="background-image: url('images/content/images/count.png')">
+                                <div class="count__int">30</div>
+                                <span>дней</span>
+                            </div>
+                            <div class="count wow zoomIn" data-wow-delay="0.5s"
+                                 style="background-image: url('images/content/images/count.png')">
+                                <div class="count__int">8</div>
+                                <span>часов</span>
+                            </div>
+                            <div class="count wow zoomIn" data-wow-delay="0.9s"
+                                 style="background-image: url('images/content/images/count.png')">
+                                <div class="count__int">57</div>
+                                <span>минут</span>
+                            </div>
+                            <div class="count wow zoomIn" data-wow-delay="1.1s"
+                                 style="background-image: url('images/content/images/count.png')">
+                                <div class="count__int">25</div>
+                                <span>секунд</span>
+                            </div>
+                        </div>
+                        <div class="present">
+                            <div class="present__img"
+                                 style="background-image: url('images/content/images/present.png')"></div>
+                            <div class="present__text">И получите дополнительный <br> подарок от компании</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 wow zoomIn">
+                    <div class="count-form">
+                        <div class="form">
+                            <div class="count-form__title">Что бы получить информацию о скидках, заполните форму и
+                                нажмите на кнопку
+                            </div>
+                            <form action="#" class="form-group" data-info="Информация о скидках">
+                                <div class="form-control">
+                                    <input name="name" type="text" placeholder="Имя">
+                                </div>
+                                <div class="form-control form-control__number">
+                                    <div class="form__flag"
+                                         style="background-image: url('images/content/icons/flag.png')"></div>
+                                    <div class="form__svg">
+                                        <svg>
+                                            <use href="#call"></use>
+                                        </svg>
+                                    </div>
+                                    <input name="number" type="number">
+                                </div>
+                                <div class="form-control">
+                                    <div class="button button_primary">
+                                        <button class="submit">ОТПРАВИТЬ</button>
+                                    </div>
+                                </div>
+                                <div class="messages">
+                                    <span class="messages__error">Пожалуйста заполните все поля</span>
+                                    <span class="messages__complete">Спасибо, ваша заявка принята</span>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="count__cloud"
+                             style="background-image: url('images/content/images/cloud.png')"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="count__bg"></div>
+    </section>
+    <section class="section section-advantage">
+        <div class="advantage__circle" style="background-image: url('images/content/images/green_circle.png')"></div>
+        <div class="container">
+            <div class="section__header">
+                <h4 class="section__title section__title_lighter">Почему выбирают нас</h4>
+            </div>
+            <div class="advantage__description">
+                <p>В своей повседневной работе ООО «Kira VitaFarm» руководствуется Законом о здравоохранении, Законом о
+                    лекарственных средствах, постановлениями правительства и Министерства здравоохранения Республики
+                    Узбекистан, иными нормативными правовыми актами в области здравоохранения</p>
+            </div>
+        </div>
+    </section>
+    <section class="section section-work">
+        <div class="work__rows" style="background-image: url('images/content/images/rows2.png')"></div>
+        <div class="work__dod" style="background-image: url('images/content/images/dod.png')"></div>
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title wow bounceInUp">С нами работать легко</h2>
+                <div class="section__subtitle">Процесс работы</div>
+            </div>
+            <div class="work-list">
+                <div class="work-item wow zoomIn" data-wow-delay="0s">
+                    <div class="work-item__img" style="background-image: url('images/content/images/work-1.png')">
+                        <div class="work-item__arrow work-item__arrow_top"
+                             style="background-image: url('images/content/images/work_arrow_top.png')"></div>
+                    </div>
+                    <div class="work-item__text">Заполните форму на сайте или позвоните</div>
+                </div>
+                <div class="work-item wow zoomIn" data-wow-delay="0.3s">
+                    <div class="work-item__img" style="background-image: url('images/content/images/work-2.png')">
+                        <div class="work-item__arrow work-item__arrow_bottom"
+                             style="background-image: url('images/content/images/work_arrow_bottom.png')"></div>
+                    </div>
+                    <div class="work-item__text">Наш специалист свяжется с вами</div>
+                </div>
+                <div class="work-item wow zoomIn" data-wow-delay="0.5s">
+                    <div class="work-item__img" style="background-image: url('images/content/images/work-3.png')">
+                        <div class="work-item__arrow work-item__arrow_top"
+                             style="background-image: url('images/content/images/work_arrow_top.png')"></div>
+                    </div>
+                    <div class="work-item__text">Оперативная обработка заказа</div>
+                </div>
+                <div class="work-item wow zoomIn" data-wow-delay="0.7s">
+                    <div class="work-item__img" style="background-image: url('images/content/images/work-4.png')">
+                        <div class="work-item__arrow work-item__arrow_bottom"
+                             style="background-image: url('images/content/images/work_arrow_bottom.png')"></div>
+                    </div>
+                    <div class="work-item__text">Производится в согласованные сроки</div>
+                </div>
+                <div class="work-item wow zoomIn" data-wow-delay="0.9s">
+                    <div class="work-item__img" style="background-image: url('images/content/images/work-5.png')"></div>
+                    <div class="work-item__text">Доставка бесплатная</div>
+                </div>
+                <div class="work__pencil wow zoomInLeft" data-wow-delay="1.5s" data-wow-duration="1.5s"
+                     style="background-image: url('images/content/images/pancil.png')"></div>
+            </div>
+
+        </div>
+    </section>
+    <section class="section section-feedback">
+        <div class="feedback-work__fruit wow slideInUp"
+             style="background-image: url('images/content/fruits/apelsin.png')"></div>
+        <div class="container">
+            <div class="feedback-work">
+                <div class="row justify-content-between">
+                    <div class="col-12 col-lg-6">
+                        <div class="feedback-work__info wow fadeInLeft">
+                            <div class="feedback-work__rows"
+                                 style="background-image: url('images/content/images/vol.png')"></div>
+                            <h4 class="feedback-work__title">Начнем работу?</h4>
+                            <p class="feedback-work__text">Затем заполните форму и разместите заказ. <br> Наши
+                                специалисты
+                                свяжутся с Вами в ближайшее время.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="feedback-form wow zoomIn">
+                            <div class="form">
+                                <form action="#" class="form-group" data-info="Начнем работу">
+                                    <div class="form-control">
+                                        <input name="name" type="text" placeholder="Имя">
+                                    </div>
+                                    <div class="form-control form-control__number">
+                                        <div class="form__flag"
+                                             style="background-image: url('images/content/icons/flag.png')"></div>
+                                        <div class="form__svg">
+                                            <svg>
+                                                <use href="#call"></use>
+                                            </svg>
+                                        </div>
+                                        <input name="number" type="number">
+                                    </div>
+                                    <div class="form-control">
+                                        <div class="button button_primary">
+                                            <button class="submit">ОТПРАВИТЬ</button>
+                                        </div>
+                                    </div>
+                                    <div class="messages">
+                                        <span class="messages__error">Пожалуйста заполните все поля</span>
+                                        <span class="messages__complete">Спасибо, ваша заявка принята</span>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="feedback-form__cloud"
+                                 style="background-image: url('images/content/images/feedback-cloud.png')"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-media">
+        <div class="media__cherry wow zoomIn" style="background-image: url('images/content/fruits/cherry.png')"></div>
+        <div class="media__cherry2 wow zoomInLeft"
+             style="background-image: url('images/content/fruits/cherry2.png')"></div>
+        <div class="media__circle" style="background-image: url('images/content/images/circle.png')"></div>
+        <div class="media__circle2 wow zoomIn" data-wow-duration="5s"
+             style="background-image:url('images/content/images/orange_rows.png')"></div>
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Мнение наших клиентов</h2>
+            </div>
+            <div class="swiper-container media__slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide media__slide">
+                        <div>
+                            <video
+                                    id="vid1"
+                                    class="video-js vjs-default-skin"
+                                    controls
+                                    width="640" height="264"
+                                    data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=xjS6SftYQaQ"}], "youtube": { "iv_load_policy": 1 } }'
+                            >
+                            </video>
+                        </div>
+                    </div>
+                    <div class="swiper-slide media__slide">
+                        <iframe src="https://www.youtube.com/embed/nF2GzXpxyeA" frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="swiper-slide media__slide">
+                        <iframe src="https://www.youtube.com/embed/WwQ312eKt6Y" frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="swiper-slide media__slide">
+                        <iframe src="https://www.youtube.com/embed/q_ydGn450lw" frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="swiper-slide media__slide">
+                        <iframe src="https://www.youtube.com/embed/x7E-vPJ66VQ" frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="swiper-slide media__slide">
+                        <iframe src="https://www.youtube.com/embed/0uCoYcJ0iJs" frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="swiper-slide media__slide">
+                        <iframe src="https://www.youtube.com/embed/j5lAg2XZa_A" frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="media__button media__prev">
+                    <svg>
+                        <use href="#arrow"></use>
+                    </svg>
+                </div>
+                <div class="media__button media__next">
+                    <svg>
+                        <use href="#arrow"></use>
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <div class="section section-region">
+        <div class="region__apple region__apple_top wow fadeInDown"
+             style="background-image: url('images/content/fruits/apple.png')"></div>
+        <div class="region__apple region__apple_bottom wow fadeInUp"
+             style="background-image: url('images/content/fruits/apple.png')"></div>
+        <div class="region__rows wow zoomIn" style="background-image: url('images/content/images/row3.png')"></div>
+        <div class="div container">
+            <div class="div section__header">
+                <h2 class="section__title section__title_lighter">Региональные Менеджеры</h2>
+            </div>
+            <div class="regions">
+                <div class="row">
+                    <div class="col-12 col-sm-6">
+                        <div class="region-list">
+                            <div class="region">
+                                <div class="region__header">
+                                    <div class="region__title">
+                                        <svg>
+                                            <use href="#marker"></use>
+                                        </svg>
+                                        <div>Ташкент</div>
+                                    </div>
+                                    <div class="region__button">
+                                        <svg>
+                                            <use href="#plus"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="region__footer">
+                                    <div class="region__content">
+                                        <a href="tel:+998974449646">+99897 444 96 46</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="region">
+                                <div class="region__header">
+                                    <div class="region__title">
+                                        <svg>
+                                            <use href="#marker"></use>
+                                        </svg>
+                                        <div>Ташкентская область</div>
+                                    </div>
+                                    <div class="region__button">
+                                        <svg>
+                                            <use href="#plus"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="region__footer">
+                                    <div class="region__content">
+                                        <a href="tel:+998974458626">+99897 445 86 26</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="region">
+                                <div class="region__header">
+                                    <div class="region__title">
+                                        <svg>
+                                            <use href="#marker"></use>
+                                        </svg>
+                                        <div>Самарканд</div>
+                                    </div>
+                                    <div class="region__button">
+                                        <svg>
+                                            <use href="#plus"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="region__footer">
+                                    <div class="region__content">
+                                        <a href="tel:+998974442686">+99897 444 26 86</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="region">
+                                <div class="region__header">
+                                    <div class="region__title">
+                                        <svg>
+                                            <use href="#marker"></use>
+                                        </svg>
+                                        <div>Навайи</div>
+                                    </div>
+                                    <div class="region__button">
+                                        <svg>
+                                            <use href="#plus"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="region__footer">
+                                    <div class="region__content">
+                                        <a href="tel:+998977668626">+99897 766 86 26</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="region">
+                                <div class="region__header">
+                                    <div class="region__title">
+                                        <svg>
+                                            <use href="#marker"></use>
+                                        </svg>
+                                        <div>Сурхандаря</div>
+                                    </div>
+                                    <div class="region__button">
+                                        <svg>
+                                            <use href="#plus"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="region__footer">
+                                    <div class="region__content">
+                                        <a href="tel:+998937938626">+99893 793 86 26</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <div class="region-list">
+                            <div class="region">
+                                <div class="region__header">
+                                    <div class="region__title">
+                                        <svg>
+                                            <use href="#marker"></use>
+                                        </svg>
+                                        <div>Каракалпакистан</div>
+                                    </div>
+                                    <div class="region__button">
+                                        <svg>
+                                            <use href="#plus"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="region__footer">
+                                    <div class="region__content">
+                                        <a href="tel:+998977758626">+99897 775 86 26</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="region">
+                                <div class="region__header">
+                                    <div class="region__title">
+                                        <svg>
+                                            <use href="#marker"></use>
+                                        </svg>
+                                        <div>Андижан</div>
+                                    </div>
+                                    <div class="region__button">
+                                        <svg>
+                                            <use href="#plus"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="region__footer">
+                                    <div class="region__content">
+                                        <a href="tel:+998977328626">+99897 732 86 26</a>
+                                        <a href="tel:+998916571386">+99891 657 13 86</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="region">
+                                <div class="region__header">
+                                    <div class="region__title">
+                                        <svg>
+                                            <use href="#marker"></use>
+                                        </svg>
+                                        <div>Фергана</div>
+                                    </div>
+                                    <div class="region__button">
+                                        <svg>
+                                            <use href="#plus"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="region__footer">
+                                    <div class="region__content">
+                                        <a href="tel:+998977328626">+99897 732 86 26</a>
+                                        <a href="tel:+998916571386">+99891 657 13 86</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="region">
+                                <div class="region__header">
+                                    <div class="region__title">
+                                        <svg>
+                                            <use href="#marker"></use>
+                                        </svg>
+                                        <div>Наманган</div>
+                                    </div>
+                                    <div class="region__button">
+                                        <svg>
+                                            <use href="#plus"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="region__footer">
+                                    <div class="region__content">
+                                        <a href="tel:+998977328626">+99897 732 86 26</a>
+                                        <a href="tel:+998916571386">+99891 657 13 86</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="section section-help">
+        <div class="help__circle" style="background-image: url('images/content/images/circle_rows.png')"></div>
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-7">
+                    <div class="help wow fadeInLeft" style="background-image: url('images/content/images/help-bg.png')">
+                        <div class="help__info">
+                            <h4 class="help__title">Мы можем помочь вам <br> выбрать нужный товар по <br> доступной
+                                цене!</h4>
+                            <p class="help__text">Заполните форму и наши специалисты предоставят вам бесплатную
+                                консультацию.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="help-form wow fadeInRight">
+                        <div class="help-form__bg"
+                             style="background-image: url('images/content/images/cloud.png')"></div>
+                        <div class="form">
+                            <form action="#" class="form-group" data-info="Помощь в выборе товара">
+                                <div class="form-control">
+                                    <input name="name" type="text" placeholder="Имя">
+                                </div>
+                                <div class="form-control form-control__number">
+                                    <div class="form__flag"
+                                         style="background-image: url('images/content/icons/flag.png')"></div>
+                                    <div class="form__svg">
+                                        <svg>
+                                            <use href="#call"></use>
+                                        </svg>
+                                    </div>
+                                    <input name="number" type="number">
+                                </div>
+                                <div class="form-control">
+                                    <div class="button button_primary">
+                                        <button class="submit">ОТПРАВИТЬ</button>
+                                    </div>
+                                </div>
+                                <div class="messages">
+                                    <span class="messages__error">Пожалуйста заполните все поля</span>
+                                    <span class="messages__complete">Спасибо, ваша заявка принята</span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-clients wow bounceInUp">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Наши клиенты</h2>
+            </div>
+            <div class="clients">
+                <div class="clients__button clients__prev">
+                    <svg>
+                        <use href="#arrow"></use>
+                    </svg>
+                </div>
+                <div class="clients__button clients__next">
+                    <svg>
+                        <use href="#arrow"></use>
+                    </svg>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-10">
+                        <div class="swiper-container clients__slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="clients__block">
+                                        <div class="client"
+                                             style="background-image: url('images/content/aptek/a5.png')"></div>
+                                        <div class="client"
+                                             style="background-image: url('images/content/aptek/akmal.png')"></div>
+                                        <div class="client"
+                                             style="background-image: url('images/content/aptek/zenta.png')"></div>
+                                        <div class="client"
+                                             style="background-image: url('images/content/aptek/shox.png')"></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="clients__block">
+                                        <div class="client"
+                                             style="background-image: url('images/content/aptek/999.png')"></div>
+                                        <div class="client"
+                                             style="background-image: url('images/content/aptek/asklepiy.png')"></div>
+                                        <div class="client"
+                                             style="background-image: url('images/content/aptek/atm.png')"></div>
+                                        <div class="client"
+                                             style="background-image: url('images/content/aptek/best.png')"></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="clients__block">
+                                        <div class="client"
+                                             style="background-image: url('images/content/aptek/bio.jpg')"></div>
+                                        <div class="client"
+                                             style="background-image: url('images/content/aptek/darmon.png')"></div>
+                                        <div class="client"
+                                             style="background-image: url('images/content/aptek/garmoniya.jpg')"></div>
+                                        <div class="client"
+                                             style="background-image: url('images/content/aptek/grandpharm.png')"></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="clients__block">
+                                        <div class="client"
+                                             style="background-image: url('images/content/aptek/lyuks.jpg')"></div>
+                                        <div class="client"
+                                             style="background-image: url('images/content/aptek/malxam.png')"></div>
+                                        <div class="client"
+                                             style="background-image: url('images/content/aptek/meros.png')"></div>
+                                        <div class="client"
+                                             style="background-image: url('images/content/aptek/newpharm.jpg')"></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="clients__block">
+                                        <div class="client"
+                                             style="background-image: url('images/content/aptek/rosinka.jpeg')"></div>
+                                        <div class="client"
+                                             style="background-image: url('images/content/aptek/supra.png')"></div>
+                                        <div class="client"
+                                             style="background-image: url('images/content/aptek/tabletka.jpg')"></div>
+                                        <div class="client"
+                                             style="background-image: url('images/content/aptek/yumaks.jpg')"></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="clients__block">
+                                        <div class="client"
+                                             style="background-image: url('images/content/aptek/nikapharm.png')"></div>
+                                        <div class="client"
+                                             style="background-image: url('images/content/aptek/oriyo.jpg')"></div>
+                                        <div class="client"
+                                             style="background-image: url('images/content/aptek/pharma.png')"></div>
+                                        <div class="client"
+                                             style="background-image: url('images/content/aptek/reliance.png')"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-socials wow zoomIn">
+        <div class="social__figure" style="background-image: url('images/content/images/figure_yellow.png')"></div>
+        <div class="social__circle" style="background-image: url('images/content/images/social-circle.png')"></div>
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Узнавайте об акциях и скидках первыми!</h2>
+                <div class="section__subtitle">Для этого подпишитесь на наши социальные сети</div>
+            </div>
+            <div class="social">
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a target="_blank" href="https://www.facebook.com/kiravitafarm.uz/" class="social__link">
+                            <div class="social__img"
+                                 style="background-image: url('images/content/socials/fb.png')"></div>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="https://www.instagram.com/kiravitafarm.uz/" target="_blank" class="social__link">
+                            <div class="social__img"
+                                 style="background-image: url('images/content/socials/insta.png')"></div>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="https://t.me/kiravitafarm_uz" target="_blank" class="social__link">
+                            <div class="social__img"
+                                 style="background-image: url('images/content/socials/tg.png')"></div>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="https://www.youtube.com/channel/UCFgFROQ4vL-2zOWpH7Gq98Q" target="_blank"
+                           class="social__link">
+                            <div class="social__img"
+                                 style="background-image: url('images/content/socials/you.png')"></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="logo wow zoomIn">
+                    <div class="logo__item" style="background-image: url('images/content/logo/logo.png')"></div>
+                </div>
+                <ul class="feedback-list footer-list">
+                    <li class="feedback-list__item">
+                        <div class="feedback-list__img"
+                             style="background-image: url('images/content/icons/map.png')"></div>
+                        <div class="feedback-list__text">
+                            <a target="_blank"
+                               href="https://yandex.uz/maps/10335/tashkent/house/YkAYdA9jT0wPQFprfX95cHRgZQ==/?ll=69.283698%2C41.381831&sll=69.279737%2C41.311151&source=wizgeo&sspn=1.972046%2C0.879095&utm_medium=maps-desktop&utm_source=serp&z=17.15"
+                               class="feedback-list__link">Ташкент, Юнусабадский район, <br> 10 квартал, 15 дом, 10 кв.</a>
+                        </div>
+                    </li>
+                    <li class="feedback-list__item">
+                        <div class="feedback-list__img"
+                             style="background-image: url('images/content/icons/call.png')"></div>
+                        <div class="feedback-list__text">
+                            <a href="tel:+998977528626" class="feedback-list__link">+99897 752 86 26</a> <br>
+                            <a href="mailto:kira-vitafarm@mail.ru" class="feedback-list__link">kira-vitafarm@mail.ru</a>
+                        </div>
+                    </li>
+                    <li class="feedback-list__item">
+                        <div class="feedback-list__img"
+                             style="background-image: url('images/content/icons/calendar.png')"></div>
+                        <div class="feedback-list__text">
+                            <p>Каждый день <br> c 9:00 до 18:00</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="footer-socials">
+                    <li class="footer-socials__item">
+                        <a href="https://www.facebook.com/kiravitafarm.uz/" target="_blank"
+                           class="footer-socials__link">
+                            <div class="footer-socials__img"
+                                 style="background-image: url('images/content/socials/fb_white.png')"></div>
+                        </a>
+                    </li>
+                    <li class="footer-socials__item">
+                        <a href="https://www.instagram.com/kiravitafarm.uz/" target="_blank"
+                           class="footer-socials__link">
+                            <div class="footer-socials__img"
+                                 style="background-image: url('images/content/socials/insta_white.png')"></div>
+                        </a>
+                    </li>
+                    <li class="footer-socials__item">
+                        <a href="https://t.me/kiravitafarm_uz" target="_blank" class="footer-socials__link">
+                            <div class="footer-socials__img"
+                                 style="background-image: url('images/content/socials/tg_white.png')"></div>
+                        </a>
+                    </li>
+                    <li class="footer-socials__item">
+                        <a href="https://www.youtube.com/channel/UCFgFROQ4vL-2zOWpH7Gq98Q" target="_blank"
+                           class="footer-socials__link">
+                            <div class="footer-socials__img"
+                                 style="background-image: url('images/content/socials/you_white.png')"></div>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="footer-info">
+                    <div class="footer-info__copyright">
+                        <span>&copy 2020 Kira VitaFarm</span>
+                        <span>Товары сертифицированы.</span>
+                    </div>
+                    <div class="footer-info__mc">
+                        <a href="http://marketingconcept.uz">
+                            <img src="images/content/logo/mc.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__cloud wow slideInUp" data-wow-delay="2s"
+             style="background-image: url('images/content/images/footer.png')"></div>
+        <div class="footer__fruit footer__banana wow slideInRight"
+             style="background-image: url('images/content/fruits/banan.png')"></div>
+        <div class="footer__fruit footer__kivi wow slideInLeft" data-wow-duration="1.5s"
+             style="background-image: url('images/content/fruits/kivi.png')"></div>
+    </footer>
+</div>
+
+</body>
+</html>

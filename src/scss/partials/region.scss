@@ -1,0 +1,204 @@
+.section-region {
+  background-color: #37BEBB;
+  padding-bottom: 500px;
+  position: relative;
+  overflow: hidden;
+
+  @media (max-width: 992px) {
+    padding-bottom: 400px;
+  }
+
+  @media (max-width: 768px) {
+    padding-bottom: 200px;
+  }
+
+  &:after {
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 300px solid #fffdeb;
+    border-left: 50vw solid transparent;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+
+    @media (max-width: 992px) {
+      border-bottom: 200px solid #fffdeb;
+    }
+
+    @media (max-width: 768px) {
+      border-bottom: 150px solid #fffdeb;
+    }
+
+  }
+
+  &:before {
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 300px solid #fffdeb;
+    border-right: 50vw solid transparent;
+    position: absolute;
+    left: 0;
+    bottom: 0%;
+    z-index: 1;
+
+    @media (max-width: 992px) {
+      border-bottom: 200px solid #fffdeb;
+    }
+
+    @media (max-width: 768px) {
+      border-bottom: 150px solid #fffdeb;
+    }
+  }
+
+}
+
+.regions {
+  position: relative;
+  z-index: 5;
+}
+
+.region-list {
+  margin-top: 50px;
+}
+
+.region {
+  margin-bottom: 10px;
+
+  &__header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 18px;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+
+    svg {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+
+  }
+
+  &__button {
+    cursor: pointer;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__footer {
+    background-color: #fff;
+    overflow: hidden;
+    height: 0px;
+    transition: max-height, 500ms;
+  }
+
+  &__content {
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    transition: max-height, 300ms;
+
+    a {
+      color: #007bff;
+      display: inline-block;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+}
+
+.region.region-active {
+  .region__header {
+    background-color: #FFD700;
+  }
+}
+
+.region__apple {
+  width: 500px;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  position: absolute;
+  z-index: 2;
+
+  @media (max-width: 992px) {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.region__apple_top {
+  top: -220px;
+  left: 0px;
+
+  @media (max-width: 992px) {
+    top: -100px;
+    left: -50px;
+  }
+
+  @media (max-width: 576px) {
+    display: none;
+  }
+
+}
+
+.region__apple_bottom {
+  bottom: 100px;
+  right: 0px;
+  z-index: 1;
+
+  @media (max-width: 992px) {
+    right: 185px;
+    bottom: -70px;
+    height: 500px;
+    width: 500px;
+  }
+
+  @media (max-width: 768px) {
+    right: 185px;
+    bottom: -20px;
+    height: 300px;
+    width: 300px;
+  }
+
+  @media (max-width: 576px) {
+    height: 220px;
+    width: 220px;
+    bottom: -20px;
+    right: 105px;
+  }
+
+}
+
+
+.region__rows {
+  width: 400px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  position: absolute;
+  top: 110px;
+  left: -40px;
+  
+  @media (max-width: 576px) {
+    width: 300px;
+    height: 300px;
+  }
+}

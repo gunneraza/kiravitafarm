@@ -1,0 +1,120 @@
+.section-feedback {
+  background: rgb(245,130,32);
+  background: linear-gradient(147deg, rgba(245,130,32,1) 0%, rgba(255,215,0,1) 100%);
+  padding-top: 200px;
+  padding-bottom: 400px;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  
+  @media (max-width: 576px) {
+    padding-bottom: 500px;
+  }
+
+  &:after {
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 300px solid #fffdeb;
+    border-left: 100vw solid transparent;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    
+    @media (max-width: 576px) {
+      border-bottom: 150px solid #fffdeb;
+    }
+  }
+}
+
+.feedback-work {
+
+  &__info {
+    position: relative;
+  }
+
+  &__rows {
+    width: 200px;
+    height: 62px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    position: absolute;
+    top: -70%;
+    left: 0px;
+  }
+
+  &__fruit {
+    position: absolute;
+    bottom: -45px;
+    left: 326px;
+    width: 450px;
+    height: 386px;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    
+    @media (max-width: 992px) {
+      left: 20px;
+    }
+  }
+
+
+  &__title {
+    font-size: 30px;
+    color: #000;
+    font-weight: 800;
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.2;
+  }
+}
+
+.feedback-form {
+  padding: 0 50px;
+  position: relative;
+  
+  @media (max-width: 1200px) {
+    padding: 0px 20px;
+  }
+  
+  @media (max-width: 992px) {
+    margin-top: 180px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .form {
+    position: relative;
+    z-index: 23;
+    
+    @media (max-width: 992px) {
+      width: 250px;
+      margin-right: 20px;
+    }
+
+    input {
+      border-color: #ccc !important;
+    }
+  }
+
+  &__cloud {
+    position: absolute;
+    top: -185px;
+    right: -162px;
+    width: 800px;
+    height: 450px;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+  }
+
+}
+

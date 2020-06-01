@@ -1,0 +1,60 @@
+.section-clients {
+  padding: 50px 0px;
+  
+  @media (max-width: 768px) {
+    padding-bottom: 0px;
+  }
+}
+
+.clients__block {
+  display: flex;
+  justify-content: space-around;
+  padding: 70px 0px;
+  position: relative;
+  z-index: 99;
+  
+  @media (max-width: 992px) {
+    flex-wrap: wrap;
+  }
+}
+
+.client {
+  width: 150px;
+  height: 150px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+
+  
+  @media (max-width: 992px) {
+    width: 40%;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+.clients {
+  position: relative;
+  z-index: 999;
+}
+
+.clients__button {
+  position: absolute;
+  top: 50%;
+  margin-top: -40px;
+  cursor: pointer;
+  z-index: 999;
+
+  svg {
+    width: 40px;
+    height: 40px;
+    fill: #f58220;
+  }
+}
+
+.clients__next {
+  right: 0px;
+  transform: rotate(180deg);
+}

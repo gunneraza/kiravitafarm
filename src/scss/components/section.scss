@@ -1,0 +1,63 @@
+.section {
+  padding: 50px 0;
+
+  &__header {
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 36px;
+    color: #f58220;
+    border: 2px solid #f58220;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 4px;
+    font-weight: 700;
+    //box-shadow: 0px 2px 4px rgba(0,0,0,0.4);
+    text-transform: uppercase;
+    position: relative;
+    z-index: 99;
+
+    @media (max-width: 1200px) {
+      font-size: 30px;
+    }
+  }
+
+  &__subtitle {
+    color: #C4C2AF;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 12px;
+  }
+
+  &__title_lighter {
+    border-color: #fff;
+    color: #fff !important;
+  }
+
+}
+
+.messages {
+  font-size: 14px;
+  font-weight: 500;
+
+  &__complete {
+    transition: 300ms ease;
+    opacity: 0;
+    color: #000;
+  }
+
+  &__error {
+    color: red;
+    transition: 300ms ease;
+    opacity: 0;
+  }
+
+  &__error.active {
+    opacity: 1;
+  }
+
+  &__complete.active {
+    opacity: 1;
+  }
+}

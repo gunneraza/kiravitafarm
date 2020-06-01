@@ -1,0 +1,160 @@
+.section-media {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.media__slider {
+  margin-top: 70px;
+  position: relative;
+}
+
+.media__video {
+  width: 80%;
+  height: 450px;
+
+  @media (max-width: 768px) {
+    height: 350px;
+  }
+
+  @media (max-width: 576px) {
+    height: 200px;
+  }
+}
+
+.media__slide {
+  display: flex;
+  justify-content: center;
+
+  iframe {
+    width: 80%;
+    height: 450px;
+
+    @media (max-width: 768px) {
+      height: 350px;
+    }
+
+    @media (max-width: 576px) {
+      height: 200px;
+    }
+  }
+}
+
+.media__button {
+  cursor: pointer;
+  position: absolute;
+  z-index: 9;
+
+  svg {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.media__next {
+  top: 50%;
+  right: 0px;
+  margin-top: -25px;
+  transform: rotate(180deg);
+  
+  @media (max-width: 576px) {
+    right: -6px;
+  }
+}
+
+.media__prev {
+  top: 50%;
+  left: 0px;
+  margin-top: -25px;
+
+  @media (max-width: 576px) {
+    left: -6px;
+  }
+}
+
+
+.media__cherry {
+  width: 500px;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  position: absolute;
+  right: -50px;
+  bottom: -40px;
+  transform: rotate(30deg);
+  
+  @media (max-width: 576px) {
+    width: 300px;
+    height: 300px;
+    right: 40px;
+    bottom: -80px;
+  }
+}
+
+.media__cherry2 {
+  width: 250px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  position: absolute;
+  left: 100px;
+  top: -80px;
+
+  @media (max-width: 576px) {
+    display: none;
+  }
+}
+
+.media__circle {
+  width: 400px;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  position: absolute;
+  right: 100px;
+  top: -200px;
+  z-index: 10;
+  animation-name: media-animate;
+  animation-duration: 7s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  @media (max-width: 992px) {
+    width: 350px;
+    height: 350px;
+    right: -152px;
+  }
+  
+  @media (max-width: 576px) {
+    width: 240px;
+    height: 240px;
+  }
+}
+
+.media__circle2 {
+  width: 500px;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  position: absolute;
+  left: -100px;
+  bottom: -200px;
+  z-index: -1;
+}
+
+@keyframes media-animate {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+

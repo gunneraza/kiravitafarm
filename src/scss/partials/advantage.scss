@@ -1,0 +1,55 @@
+.section-advantage {
+  margin-top: 100px;
+  position: relative;
+  padding: 100px 0px;
+  
+  @media (max-width: 576px) {
+    padding-bottom: 20px;
+  }
+
+  .section__title {
+    @media (max-width: 992px) {
+      color: #000 !important;
+      border: 2px solid #000;
+    }
+  }
+}
+
+.advantage__description {
+  color: #fff;
+  padding: 50px 0px;
+  position: relative;
+  z-index: 99;
+  
+  @media (max-width: 992px) {
+    color: #000;
+  }
+
+  p {
+    line-height: 1.8;
+    font-size: 24px;
+
+    @media (max-width: 992px) {
+      line-height: 1.2;
+      font-size: 20px;
+    }
+  }
+
+}
+
+.advantage__circle {
+  width: 700px;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  position: absolute;
+  right: 100px;
+  bottom: -100px;
+  z-index: 99;
+  opacity: 0.4;
+  
+  @media (max-width: 992px) {
+    display: none;
+  }
+}
